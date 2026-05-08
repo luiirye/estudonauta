@@ -8,3 +8,5 @@ suc = x + 1
 print(
     "Número informado: {}\nSucessor de {}: {}\nAntecessor de {}: {}".format(x, x, suc, x, ant)
 )
+
+## Correto
