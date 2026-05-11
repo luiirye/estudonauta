@@ -4,5 +4,5 @@ import random
 
 nomes = ['Luis Felipe', 'Lara', 'Ruam', 'Ryan']
 sorteado = random.choice(nomes)
-print(f"Aluno sorteado: {sorteado}")
+print("Aluno sorteado: {}".format(sorteado))
 
