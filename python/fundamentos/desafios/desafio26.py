@@ -18,6 +18,6 @@ print(
 )
 # 3
 print(
-    "Posição em que 'A' aparece pela ÚLTIMA vez: {}".format(frase.count)
+    "Posição em que 'A' aparece pela ÚLTIMA vez: {}".format(frase.rfind('A')) # Exibe a posição da última letra 'A' da frase
 )
 print("=" * 100)
