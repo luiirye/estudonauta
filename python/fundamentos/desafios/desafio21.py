@@ -3,6 +3,7 @@
 import pygame
 import time
 
-pygame.mixer.init()
-
-pygame.mixer.music.load(arquivo)
+pygame.init() #Iniciando o pygame
+pygame.mixer.music.load('desafio21.mp3')
+pygame.mixes.music.play()
+pygame.event.wait()

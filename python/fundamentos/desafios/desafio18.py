@@ -10,5 +10,5 @@ tx = tan(convertx)# tangente de x
 
 
 print(
-    "Ângulo: {:.2f}\nSeno: {:.4f}\nCosseno: {:.4f}\nTangente: {:.4f}".format(x, sx, cx, tx)
+    "Ângulo: {:.2f}\nSeno: {:.2f}\nCosseno: {:.2f}\nTangente: {:.2f}".format(x, sx, cx, tx)
 )
