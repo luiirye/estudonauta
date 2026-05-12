@@ -1,6 +1,6 @@
 # Crie um programa que leia o nome de uma cidade e diga se ela começa ou não o nome "SANTO"
 
-cidade = str(input("Digite o nome de alguma cidade: "))
+cidade = str(input("Digite o nome de alguma cidade: ")).strip()
 print("=" * 100)
 print(
     "Nome da cidade: {}".format(cidade)

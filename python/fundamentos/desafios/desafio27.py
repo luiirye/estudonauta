@@ -4,16 +4,19 @@
 # primeiro: Ana
 # ùltimo: Souza
 
-nome = str(input("informe o nome completo de uma pessoa: "))
+nome = str(input("informe o nome completo de uma pessoa: ")).strip() # Adicionado strip
+
+n = nome.split() # Adicionado variável "n" para melhor entendimento nos Prints
+
 print("=" * 100)
 print(
     "Nome Completo informado: {}".format(nome)
 )
 # 1
 print(
-    "Prmeiro nome: {}".format(nome.split()[0])
+    "Prmeiro nome: {}".format(n[0])
 )
 # 2
 print(
-    "Último nome: {}".format(nome.split())
+    "Último nome: {}".format(n[len(n) - 1]) # Adicionado Len - 1 para pegar a última posição.
 )

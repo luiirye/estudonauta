@@ -3,7 +3,7 @@
 # 2 - Em que posição ela aparece pela primeira vez
 # 3 - Em que posição ela aparece pela última vez
 
-frase = str(input("Digite uma frase qualquer: "))
+frase = str(input("Digite uma frase qualquer: ")).upper().strip() #Adicionado upper e strip
 print("=" * 100)
 print(
     "Frase: {}".format(frase)
@@ -14,10 +14,12 @@ print(
 )
 # 2
 print(
-    "Posição em que 'A' aparece pela PRIMEIRA vez: {}".format(frase.find('A')) # Exibe a posição da primeira letra A da frase
-)
+    "Posição em que 'A' aparece pela PRIMEIRA vez: {}".format(frase.find('A') + 1) # Exibe a posição da primeira letra A da frase
+)                                                                             # adicionado + 1
 # 3
 print(
-    "Posição em que 'A' aparece pela ÚLTIMA vez: {}".format(frase.rfind('A')) # Exibe a posição da última letra 'A' da frase
-)
+    "Posição em que 'A' aparece pela ÚLTIMA vez: {}".format(frase.rfind('A') + 1) # Exibe a posição da última letra 'A' da frase
+)                                                                            # Adicionado + 1
 print("=" * 100)
+
+## Corrigido
