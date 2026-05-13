@@ -7,9 +7,9 @@ p2 = 0.45
 
 if distancia <= 200.00:
     print(
-        "Distância da viagem: {} km.\nPreço por km: R$ {}\nValor da passagem: R$ {}".format(distancia, p1, (distancia * p1))
+        "Distância da viagem: {:.1f} km.\nPreço por km: R$ {:.2f}\nValor da passagem: R$ {:.2f}".format(distancia, p1, (distancia * p1))
     )
 else:
     print(
-        "Distância da viagem: {} km.\nPreço por km: R$ {}\nValor da passagem: R$ {}".format(distancia, p2, (distancia * p2))
+        "Distância da viagem: {:.1f} km.\nPreço por km: R$ {:.2f}\nValor da passagem: R$ {:.2f}".format(distancia, p2, (distancia * p2))
     )

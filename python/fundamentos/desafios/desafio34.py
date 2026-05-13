@@ -14,4 +14,3 @@ else:
     print(
         "Salário inicial: R$ {:.2f}\nSalário com aumento de 10%: R$ {:.2f}".format(salario, calculo)
     )
-    
