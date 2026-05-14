@@ -3,9 +3,9 @@
 # 2 - Para octal
 # 3 - para hexadecimal
 
-print("-=-" * 20)
+print("-=-" * 10)
 print("Base de conversão")
-print("-=-" * 20)
+print("-=-" * 10)
 
 digit = int(input("Digite um número qualquer: "))
 
