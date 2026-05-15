@@ -28,6 +28,8 @@ elif (opt == 3):
     print("Preço normal à pagar.\nPreço produto: R$ {:.2f}".format(produto_valor))
 elif (opt == 4):
     print("Forma de pagemento: 4 - 3x ou mais no cartão")
-    print("Preço produto: R$ {:.2f}\nNovo preço com 20% de juros: R$ {:.2f}".format(produto_valor, cartao))
+    parcelas = int(input("Quantas parcelas?"))
+    parc_total = cartao / parcelas
+    print("Preço produto: R$ {:.2f}\nNovo preço com 20% de juros: R$ {:.2f}\nPreço do produto em {:.0f} vezes: R$ {:.2f}".format(produto_valor, cartao,parcelas, parc_total))
 else:
     print("Selecione alguma das opções acima. reinicie o programa.")
