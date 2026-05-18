@@ -2,9 +2,12 @@
 # Se for ímpar, desconsidere-o
 
 soma = 0
-for i in range (0, 6):
-    x = int(input("Informe um número: "))
+contador = 0
+for i in range (1, 7):
+    x = int(input("Informe o {} número: ".format(i)))
     if x % 2 == 0:
         soma += x
+        contador += 1
         
 print("SOMA = {}".format(soma))
+print("NÚMEROS PARES SOMADOS: {}".format(contador))

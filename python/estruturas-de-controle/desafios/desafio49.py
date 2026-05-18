@@ -3,4 +3,4 @@
 x = int(input("Informe um número para multiplicar: "))
 for i in range(1, 11):
     prod = x * i
-    print("[{} X {} = {}]".format(x,i,prod))
+    print("{} X {:2} = {}".format(x,i,prod))
