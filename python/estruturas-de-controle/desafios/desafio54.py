@@ -2,7 +2,20 @@
 # No final, mostre quantas pessoas ainda não atingiram a maioridade e quantas já são maiores de idade.
 # Considere maior idade como 21 anos.
 
-for i in range(1, 8, 1):
-    ano = int(input('informe o ano de nascimento da pessoa {}: ').format(i))
+from datetime import date
 
-print(ano, end = '')    
+ano_atual = date.today().year
+maior = 0
+menor = 0
+
+for pessoas in range(1,8):
+
+    ano = int(input("Informe o ano em que a {}ª pessoa nasceu: ".format(pessoas)))
+    idade = ano_atual - ano
+
+    if (idade < 21):
+        menor += 1
+    else:
+        maior += 1
+        
+print("{} pessoas ainda NÃO atingiram a maioridade.\n{} pessoas são maoires de idade.".format(menor, maior))
