@@ -9,28 +9,23 @@ print("==="*10)
 a = int(input("Informe o primeiro termo: "))
 r = int(input("Informe a razão: "))
 
-dec_trm = (a + (10 - 1) * r)
+count = a # Valor atual da PA
+ai = 1 # contador de termos
 
-count = a
-ai = 1 
-soma = 0
+mais = 10 # começa mostrando 10 termos
+total = 0 # total de termos mostrados
 
-while count <= dec_trm:
+while mais != 0:
     
-    print("a{} -> {}".format( ai, count))
-    count += r  # Contador pega o termo e vai somando com a razão
-                # 2 + 3 = 5 + 3 = 8 +3 = ...
-    ai += 1     # Para ilustrar qual "an" está
-    
-    if count == dec_trm:
-        print("Gostaria de mostrar mais algum termo?\n")
-        resp = str(input("[Sim] / [Não] : ")).strip().upper()
+    total += mais
+
+    while ai <= total: # enquanto os termos forem menores ou iguais ao total de termos, faça o bloco
+        print("a{} -> {}".format(ai, count))
         
-        if resp == 'SIM':
-            a = int(input("Informe o primeiro termo: "))
-            r = int(input("Informe a razão: "))
-            dec_trm = (a + (10 - 1) * r)
-            cont = a
-            
-        else: 
-            print("Encerrando programa...")
+        count += r
+        ai += 1
+        
+    mais = int(input("Quer mostrar mais quantos termos?"))
+    
+print("Encerrando programa...'")
+        
