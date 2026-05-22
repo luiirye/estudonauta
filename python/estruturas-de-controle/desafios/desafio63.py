@@ -5,28 +5,22 @@ from math import sqrt
 
 # tentando separar os problemas em pequenas partes
 # primeira parte: ler um número N
-n = int(input("Informe um número inteiro qualquer: "))
+print("--" * 15)
+print("Sequência de Fibonacci")
+print("--" * 15)
+
+n = int(input("Quantos termos você quer mostrar? "))
 
 # sequência de fibonacci
-# informação: cada termo é a soma dos dois termos anteriores
-
-a1 = 1
+a1 = 0
 a2 = 1
-fibonacci = 0
-count = 1
-
-while fibonacci <= n:
-    
-    if n == 1 or n == 2:
-        print("1")
-        fibonacci = n + 1
-        
-    else:
-        fibonacci = a1 + a2
-        print("termo: {} -> {} + {} = {}".format(count, a1, a2, fibonacci))
-        a1 = a2
-        a2 = fibonacci
-        count += 1 # contador para saber qual termo é qual
-    
-
-print("fim do programa")
+print("~" * 30)
+print("{} -> {}".format(a1, a2), end = '')
+contador = 3
+while contador <= n:
+    a3 = a1 + a2
+    print(" -> {}".format(a3), end = '')
+    a1 = a2
+    a2 = a3
+    contador += 1
+print("-> FIM")

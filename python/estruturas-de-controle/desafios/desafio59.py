@@ -48,3 +48,5 @@ while opt != 5:
         
     elif opt >= 6:
         print("Opção inválida...")
+        
+# Bem estruturado

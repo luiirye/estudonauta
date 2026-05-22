@@ -5,6 +5,7 @@
 from random import randint
 from time import sleep
 
+'''
 print("-=-" * 20)
 print("Jogo da advinhação. Tente advinhar um número entre 0 a 10")
 print("-=-" * 20)
@@ -34,3 +35,26 @@ while num != rnum:
     else:
         print("PARABÉNS, VOCÊ ADVINHOU O NÚMERO!!\nNúmero digitado: {}\nNúmero sorteado: {}".format(num, rnum))
         print("Quantidades de palpites: {}".format(palpites))
+'''
+
+# resolução do professor
+computador = randint(0, 10)
+print("Sou seu computador... Acabei de pensar um número entre 0 e 10.")
+print("Será que você consegue advinhar qual é?")
+
+acertou = False # Usado valor booleano
+palpites = 0
+while not acertou:
+    jogador = int(input("Qual é seu palpite? "))
+    
+    palpites += 1
+    
+    if jogador == computador:
+        acertou = True
+    else:
+        if jogador < computador:
+            print("Mais... tente mais uma vez.")
+        elif jogador > computador:
+            print("Menos... Tente mais uma vez.")
+print("Acertou com {} tentativas".format(palpites))
+    
