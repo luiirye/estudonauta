@@ -13,12 +13,14 @@ print("=======" * 4)
 vitorias = 0
 
 while True:
+    
+    print("==" * 10)
     print("Escolha: \n[1] - Par\n[2] - Ímpar")
 
     opt = int(input(""))
     num = int(input("Informe um número de 0 a 10: "))
 
-    pc = randint(0, 10)
+    pc = randint(0, 11)
     soma = num + pc
 
     resultado_par = soma % 2 == 0

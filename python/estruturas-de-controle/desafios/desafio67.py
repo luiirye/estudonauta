@@ -7,18 +7,16 @@ print("==" * 10)
 print("TABUADA DE INTEIROS")
 print("==" * 10)
 
-num = int(input("Informe um número para mostrar sua tabuada: "))
-m = 1 
-
 while True:
     
-    total = num * m
-    print(f"{num} * {m} = {total}")
-    m += 1
+    num = int(input("Informe um número para mostrar sua tabuada: "))
     
-    if m == 11:
-        m = 1
-        num = int(input("Digite outro número: "))
-        if num < 0:
-            print("Encerrando tabuada...")
-            break
+    if num < 0:
+        break
+    
+    print("===" * 10)
+    for c in range(1,11):
+        print(f"{num} X {c} = {num*c}")
+    print("===" * 10)
+
+print("Programa tabuada encerrado...")

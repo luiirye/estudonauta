@@ -8,38 +8,27 @@ No final, mostre:
     B) Quantos HOMENS foram cadastrados
     C) Quantas MULHERES tem menos de 20 anos
 '''
-
-
-
+tot18 = totH = totM20 = 0
 while True:
+    idade = int(input("Idade: "))
+    sexo = ' '
+    while sexo not in 'MF':
+        sexo = str(input("Sexo: [M/F]")).strip().upper()[0]
+
+    if idade >= 18:
+        tot18 += 1
+    if sexo == 'M':
+        totH += 1
+    if sexo == 'F' and idade < 20:
+        totM20 += 1
     
-    nome = str(input("Informe o nome da pessoa: "))
-    idade = int(input("Informe a idade dessa pessoa: "))
-    sexo = str(input("Informe o sexo dessa pessoa: "))
-    if sexo not in 'MmFf': 
-        while True:
-            print("Sexo inválido. Digite apenas [M/F]")
-            sexo = str(input("Informe o sexo dessa pessoa: "))
-                
-    opt = str(input("Quer continuar? [S/N]: "))    
-    
-    if opt not in 'Ss':
-        print("\n")
-        nome = str(input("Informe o nome da pessoa: "))
-        idade = int(input("Informe a idade dessa pessoa: "))
-        sexo = str(input("Informe o sexo dessa pessoa: "))
-        if sexo not in 'MmFf':
-            while True:
-                print("Sexo inválido. Digite apenas [M/F]")
-                sexo = str(input("Informe o sexo dessa pessoa: "))
-            
-        opt = str(input("Quer continuar? [S/N]: "))
-        
-    else:
-        print("Programa encerrado...")
+    resposta = ' '
+    while resposta not in 'SN':
+        resposta = str(input("Quer continuar? [S/N] ")).strip().upper()[0]
+
+    if resposta == 'N':
         break
 
-print("\n")
-print("Quantidade de pessoas com mais de 18 anos: {}")
-print("Quantidade de Homens cadastrados: {}")
-print("Quantidade de Mulheres com menos de 20 anos cadastradsa: {}")
+print(f'Total de pessoas com mais de 18 anos: {tot18}')
+print(f'Total de homens cadastrados: {totH}')
+print(f'Total de mulheres com menos de 20 anos: {totM20}')
