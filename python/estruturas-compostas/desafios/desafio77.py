@@ -7,3 +7,14 @@ palavras = (
     'curso', 'gratis', 'estudar', 'praticar',
     'trabalhar', 'mercado', 'programador', 'futuro'
 )
+
+vogais = 'aeiou'
+
+for palavra in range(0, len(palavras)):
+    
+    print(f"\nNa palavra {palavras[palavra]} temos as vogais: ", end='')
+    
+    for vogal in palavras[palavra]:
+        
+        if vogal in vogais:
+            print(vogal, end ='')
