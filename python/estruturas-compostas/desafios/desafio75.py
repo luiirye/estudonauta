@@ -5,39 +5,26 @@ A) Quantas vezes apareceu o valor 9.
 B) Em que posição foi digitado o primeiro valor 3.
 C) Quais Foram os números pares.
 '''
-cont9 = 0
-pos3 = 0
 
-n1 = int(input("Insira um valor: "))
-n2 = int(input("Insira um valor: "))
-n3 = int(input("Insira um valor: "))
-n4 = int(input("Insira um valor: "))
-
-tupla = (n1, n2, n3 , n4)
+n = (
+    int(input("Digite um número: ")),
+    int(input("Digite um número: ")),
+    int(input("Digite um número: ")),
+    int(input("Digite um número: "))
+)
+print(f"Valores digitados: {n}")
 
 # A) Mostra quantas vezes apareceram o número nove
-for cont in range (0, len(tupla)):
-    if tupla[cont] == 9:
-        cont9 += 1
-
-if cont9 == 0:
-    print("Nenhum valor 9 inserido na tupla.")
-else:
-    print(f"O valor 9 apareceu {cont9} vezes.")
+print(f'O valor 9 apareceu {n.count(9)} vezes.')
 
 # B) Mostra em qual posição está inserido o número 3
-    
-for pos in range(len(tupla)):
-    if tupla[pos] == 3:
-        pos3 = pos
-
-if pos3 < 0:
-    print("Nenhum valor 3 inserido na tupla.")
+if 3 in n:
+    print(f'O valor 3 apareceu primeiro na {n.index(3)+1}ª posição.')    
 else:
-    print(f"O valor 3 está na posição {pos3}")
-    
-# C) Mostra quais números são pares
+    print("O valor 3 não foi digitado em nenhuma posição")
 
-for numero in range(0, len(tupla)):
-    if tupla[numero] % 2 == 0:
-        print(f"{tupla[numero]} é par")
+# C) Mostra quais números são pares
+print(f'Os valores pares digitados foram: ', end = '')
+for numero in n:
+    if numero % 2== 0:
+        print(numero, end=' ')

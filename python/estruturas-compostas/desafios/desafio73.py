@@ -29,24 +29,28 @@ brasileirao = (
     "Chapecoense"
 )
 
+print('-=' * 15)
+print(f'Lista de times do Brasileirão: {brasileirao}')
+print('-=' * 15)
+
 # a) Mostrar os 5 primeiros colocados.
-print("=" * 30)
+print("-=" * 15)
 print("Os 5 primeiros da tabela: ")
 print(brasileirao[0:5])
 
 # b) mostra os últimos quatro da tabela
-print("=" * 30)
+print("-=" * 15)
 print("Os 4 últimos da tabela: ")
-print(brasileirao[16:20:1]) # começa em 16 : vai até 20 : anda de um em um
+print(brasileirao[-4:]) # começa em 16 : vai até 20 : anda de um em um
 
 # c) uma lista em ordem alfabética
 ordem_alf = sorted(brasileirao)
-print("=" * 30)
+print("-=" * 15)
 print(ordem_alf)
 
 # d) Exibir a posição da chapecoense
-print("=" * 30)
+print("-=" * 15)
 print("Posição do time Chapecoense na tabela: ", end = '')
 for i in range(0, len(brasileirao)):
     if brasileirao[i] == 'Chapecoense': #Se o contador na tupla for igual á "Chapecoense", exibirá sua posição.
-        print(i)
+        print(i+1)

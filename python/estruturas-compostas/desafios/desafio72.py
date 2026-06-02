@@ -10,6 +10,11 @@ numeros  = (
     'Dezesseis', 'Dezessete', 'Dezoito', 'Dezenove', 'Vinte'
 )
 
-n = int(input("Digite um número de 0 até 20: "))
+while True:
+
+    n = int(input("Digite um número de 0 até 20: "))
+    if 0 <= n <= 20:
+        break
+    print('Tente novamente. ', end = '')
 
 print(f"numero informado: {n}\n{n} escrito por extenso: {numeros[n]}")
