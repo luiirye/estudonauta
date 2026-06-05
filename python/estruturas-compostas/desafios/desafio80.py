@@ -20,6 +20,19 @@ for i in range(tamanho - 1):
             # Trocando elementos
             numeros[j], numeros[j + 1] = numeros[j + 1], numeros[j]
 ## Ordenando
+
+
+'''
+Entendo o algorimto.
+Criado uma variável "tamanho" para guardar o tamanho da lista e ficar mais fácil de utilizar na ordenação.
+Algoritmo chamado de "bubble sort".
+
+O que ele faz?
+o - 1 serve para que o J acesse até o penúltimo índice, sem quebrar o código, assim chegando na condição do "if", ele consegue acessar o últi em j + 1. 
+o trecho  com -i serve para ir "empurrando" o número ordenado para o fim da lista
+
+'''
+
 print(f'Lista de números ordenadas: {numeros}')
 
             
