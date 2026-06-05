@@ -9,7 +9,7 @@ n.sort()
 print(f"sort {n}")
 n.reverse()
 print(f'reverse: {n}')
-n.insert(2, 2) # adiciona zero na posição 2
+n.insert(1, 2) # adiciona 1 na posição 2
 print(f'inser: {n}')
 n.pop() # remove o último elemento
 if 4 in n:
