@@ -12,7 +12,7 @@ impares = []
 tamanho = 0
 
 while True:
-    num = int(input("Digite um número para ser adicionado à lista: "))
+    num = int(input("Digite um número para ser adicionado à lista: [Digite 0 para sair] "))
     numeros.append(num)
 
     # Para em zero

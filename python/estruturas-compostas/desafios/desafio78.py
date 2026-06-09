@@ -17,6 +17,14 @@ for numero in range(0, 5):
         if lista_numeros[numero] < menor:
             menor = lista_numeros[numero]
 
-
-print(f'O maior número é {maior} na posição {lista_numeros.index(maior)}') # index para identificar a posição do número na lista
-print(f'O menor número é {menor} na posição {lista_numeros.index(menor)}') # index para identificar a posição do número na lista
+print(f'=-' * 30)
+print(f'Você digitou os valores: {lista_numeros}')
+print(f'O maior valor digitado foi: {maior},  nas posições: ', end='')
+for i, v in enumerate(lista_numeros):
+    if v == maior:
+        print(f'{i}... ', end='')
+print()
+print(f'O menor valor digitado foi: {menor}, nas posições: ', end='')
+for j, v in enumerate(lista_numeros):
+    if v == menor:
+        print(f'{j}... ', end='')

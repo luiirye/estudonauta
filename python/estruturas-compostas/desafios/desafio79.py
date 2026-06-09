@@ -4,19 +4,22 @@ Caso o número já exista lá dentro, ele NÃO SERÁ ADICIONADO.
 No final, serão exibidos todos os valores únicos digitados, em ordem crescente.
 '''
 
-numeros = [] # lista vazia para números
+numeros = list() # lista vazia para números
 
 while True:
-    num = (int(input("Digite um número: ")))
-    numeros.append(num)
+    n = int(input('Digite um valor: '))
     
-    if numeros.count(num) > 1:
-        print(f"Número {num} já existente na lista. Não será adicionado")
-        numeros.pop() # Para remover o último elemento adicionado
+    if n not in numeros:
+        numeros.append(n)
+        print(f'Valor adicionado com sucesso!')
+    else:
+        print(f'Valor duplicado! Não vou adicionar...')
+    
+    resposta = str(input('Quer Continuar? [S/N] '))
+    
+    if resposta in 'Nn':
         break
 
 numeros.sort()
-
-print(
-    f'Fim da lista.\nLista de todos os números digitados ordenados:\n{numeros}'
-)
+print(f'-=' * 30)
+print(f'Você digitou os valores: {numeros}')
