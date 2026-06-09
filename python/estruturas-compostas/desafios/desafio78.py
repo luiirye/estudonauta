@@ -8,11 +8,15 @@ maior = menor = 0 # variáveis para armazenar o maior e menor número
 
 
 for numero in range(0, 5):
-    lista_numeros.append(int(input("Digite um número inteiro qualquer: "))) #append para adicionar elementos à lista
-    print(f'Número {lista_numeros[numero]} adicionado á lista')
+    lista_numeros.append(int(input(f"Digite um valor para a posição {numero}: "))) #append para adicionar elementos à lista
+    if numero ==  0:
+        maior = menor = lista_numeros[numero]
+    else:
+        if lista_numeros[numero] > maior:
+            maior = lista_numeros[numero]
+        if lista_numeros[numero] < menor:
+            menor = lista_numeros[numero]
 
-maior = max(lista_numeros)
-menor = min(lista_numeros)
 
 print(f'O maior número é {maior} na posição {lista_numeros.index(maior)}') # index para identificar a posição do número na lista
 print(f'O menor número é {menor} na posição {lista_numeros.index(menor)}') # index para identificar a posição do número na lista
