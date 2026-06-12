@@ -3,6 +3,7 @@ Crie um programa onde o usuário possa digitar sete valores numéricos.
 Cadastre-os em uma LISTA ÚNICA que mantenha separado os valores pares e ímpares.
 No final, mostre os valores pares e ímpares em ordem CRESCENTE
 '''
+
 lista = list([[] , []]) # Declara uma lista com duas listas dentro.
 
 for i in range(0, 7):
