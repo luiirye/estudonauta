@@ -6,31 +6,25 @@ Aprimore o desafio anterior, mostrando no final:
 3 - O maior valor da segunda linha.
 '''
 
-matriz = list([[],[],[]]) # definindo matriz 3x3
+matriz = list([[0,0,0],[0,0,0],[0,0,0]]) # definindo matriz 3x3
 soma = somaj = maior = 0
 
-for i in range(0, 9):
-    numero = int(input(f'Digite um número para o bloco {i + 1} da matriz: '))
-    if i < 3:
-        matriz[0].append(numero)        
-    elif i > 5:
-        matriz[2].append(numero)
-    else:
-        matriz[1].append(numero)
+for l in range (0, 3):
+    for c in range(0, 3):
+        matriz[l][c] = int(input(f'Digite um valor para [{l}, {c}]: '))
         
-    if numero % 2 == 0:
-        soma += numero        
+        if matriz[l][c] % 2 == 0:
+            soma += matriz[l][c]
 
-print(f'-=' * 30)
-for i in range(0, 3):
-    for j in range(0, 3):
-        print(f'[{matriz[i][j]:3}] ', end = '')
+print('-=' * 30)
+
+for l in range(0,3):
+    for c in range(0,3):
+        print(f'[{matriz[l][c]:^5}]', end='')
     print()
 print(f'-=' * 30)
 
 print()
-
-print(f'-=' * 30)
 
 print(f'Soma de TODOS os números pares: {soma}')
 
