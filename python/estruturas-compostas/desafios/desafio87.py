@@ -40,4 +40,6 @@ else:
     maior = matriz[1][2]
 print(f'O maior valor da segunda coluna é: {maior}')    
 
+print()
+
 print(f'-=' * 30)

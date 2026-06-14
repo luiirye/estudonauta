@@ -7,35 +7,40 @@ Cadastre tudo em uma lista composta.
 from random import randint # Para gerar os números aleatórios
 from time import sleep 
 
-jogos = list() # Gera uma lista vazia
+lista = list()
+jogos = list()
 
-print(f'-' * 50)
-print(f'JOGA NA MEGA SENA QUE É SUCESSO!')
-print(f'-' * 50)
+print(f'-' * 32)
+print(f'        JOGA NA MEGA SENA       ')
+print(f'-' * 32)
 
-palpites = int(input(f'Quantos jogos quer que eu sorteie? '))
-print(f'-' * 50)
+print()
+quantidade = int(input(f'Quantos jogos você quer que eu sorteie? '))
+total_jogos = 1
 
-print(f'Sorteando {palpites} jogos')
-print(f'-' * 50)
+while total_jogos <= quantidade:
+        
+    cont = 0
 
-for i in range(palpites):
-    jogos.append(list())
+    while True:
+        num = randint(1,60)
+        if num not in lista:
+            lista.append(num)
+            cont += 1
+        if cont >= 6:
+            break
+        
+    lista.sort()
+    jogos.append(lista[:])
+    lista.clear()
+    total_jogos += 1
 
-for j in range(palpites):
-    for l in range(0,6):
-        jogos[j].append(randint(1, 60))
-        jogos[j].sort()
+print()
 
-for k in range(len(jogos)):
-    print(f'Sorteando jogo {k + 1}...')
-    sleep(0.5)
-    print(f'Jogo {k + 1:2} : {jogos[k]}')
-    sleep(0.5)
+print(f'-=' * 3, f'SORTEANDO {quantidade} JOGOS', f'-=' * 3)
 
-print(f'-' * 50)    
-print(f'Números sorteados para {palpites} jogos!!')
-
-print(f'-' * 50)
-print(f'BOA SORTE!!')
-print(f'-' * 50)
+for i, l, in enumerate(jogos):
+    print(f'Jogo {i + 1}: {l}')
+    sleep(1)
+print(f'-=' * 5, '< BOA SORTE! >', f'-=' * 5)
+        
