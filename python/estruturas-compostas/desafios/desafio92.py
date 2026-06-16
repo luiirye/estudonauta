@@ -18,9 +18,12 @@ if trabalho['ctps'] == 0:
      trabalho['ctps'] = 0
 else:
     trabalho['contratacao'] = int(input(f'Ano de Contratação: '))
-    trabalho['Salario'] = float(int(f'Salário: R$ '))
-    
-    
-    
+    trabalho['salario'] = float(input(f'Salário: R$ '))
+    trabalho['aposentadoria'] = trabalho['idade'] + (35 - (hoje - trabalho['contratacao']))
+
+print()
+print(f'-=' * 30)
+print(f' == INFORMAÇÕES DE APOSENTADORIA ==')
 for chave, valor in trabalho.items():
     print(f'{chave} tem o valor {valor}')
+print()
