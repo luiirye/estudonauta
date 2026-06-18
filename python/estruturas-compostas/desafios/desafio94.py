@@ -32,11 +32,11 @@ while True:
     if pessoa['sexo'] == 'F':
         listMulheres.append(pessoa['nome'])
         
-    if pessoa['idade'] > 21:
+    if pessoa['idade'] > medid:
         listPessoasAcima.append(pessoa['nome'])
     
     pessoas.append(pessoa.copy())
-    
+            
     resposta = ''
     resposta = str(input(f'Quer continuar? [S/N] '))
     print('-=' * 30)
@@ -44,29 +44,12 @@ while True:
     if resposta in 'Nn':
         break
     
-print(pessoa) # mostra o último dicionário feito
-print((pessoas)) # mostra a lista com todas as pessoas
-print(listMulheres) # mostra a lista com todas as mulheres
-
-print(f'-=' * 40)
-print(f'Foram cadastradas ao todo {totp} pessoas.')
-
-# Média do grupo
-medid = medid / len(pessoas)
-print()
-print(f'<------------------->')
-print(f'Média de idade é de {medid} anos')
-
-# Mulheres registradas
-print()
-print(f'<------------------->')
-print(f'Mulheres registradas: ')
+print(f'A) Ao todo foram cadastradas {totp} pessoas.')
+print(f'B) A Média de idade é de {medid:.2f} anos.')
+print(f'C) Mulheres Cadastradas: ')
 for mulher in listMulheres:
-    print(f' --> {mulher}')
+    print(f'    => {mulher}')
     
-# Pessoas acima de 21 anos
-print()
-print(f'<------------------->')
-print(f'Pessoas mais velhas: ')
+print(f'D) Lista de pessoas que estão acima da média: ')
 for pessoa in listPessoasAcima:
-    print(f' --> {pessoa}')
+    print(f'    => {pessoa}')

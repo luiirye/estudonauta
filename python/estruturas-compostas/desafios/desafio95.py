@@ -57,7 +57,9 @@ while True:
         opt = int(input('Informe o número do jogador na tabela: '))
         print(f'Ficha de {jogadores[opt - 1]['nome']}')
         print(f'Partidas jogadas: {jogadores[opt - 1]['partidas']}')
-        print(f'Gols: {jogadores[opt - 1]['gols']}')
+        #print(f'Gols: {jogadores[opt - 1]['gols']}')
+        for i in range(len(jogadores[opt - 1]['gols'])):
+            print(f'    => Na partida {i + 1}, fez {jogador['gols'][i]} gols.')
         print(f'Total de gols: {jogadores[opt - 1]['total']}')
                  
     elif resposta in 'Nn':

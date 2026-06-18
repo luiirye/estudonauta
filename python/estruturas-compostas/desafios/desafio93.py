@@ -22,6 +22,8 @@ jogador['total'] = soma
 print(jogador)
 
 print(f'-=' * 30)
-print(f' == FICHA DO JOGADOR == ')
-for key, values in jogador.items():
-    print(f'{key} = {values}')
+print(f'<== FICHA DO JOGADOR ==>')
+print(f'O jogador {jogador['nome']} jogou {jogador['partidas']}.')
+for i in range(len(gols)):
+    print(f'    => Na partida {i + 1}, fez {jogador['gols'][i]} gols.')
+print(f'Com um total de {jogador['total']} gols.')
