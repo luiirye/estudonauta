@@ -7,12 +7,13 @@ Considere aposentadoria 35 anos de contribuição.
 '''
 from datetime import date
 hoje = date.today().year
-print(hoje)
 
 trabalho = dict()
+
 trabalho['nome'] = str(input(f'Nome: '))
 trabalho['idade'] = int(input(f'Ano de nascimento: '))
 trabalho['idade'] = (hoje - trabalho['idade'])
+
 trabalho['ctps'] = int(input(f'Carteira de Trabalho (0 = Não tem): '))
 if trabalho['ctps'] == 0:
      trabalho['ctps'] = 0
@@ -23,7 +24,8 @@ else:
 
 print()
 print(f'-=' * 30)
-print(f' == INFORMAÇÕES DE APOSENTADORIA ==')
+print(f'== INFORMAÇÕES DE APOSENTADORIA ==')
+
 for chave, valor in trabalho.items():
-    print(f'{chave} tem o valor {valor}')
+    print(f' - {chave} tem o valor {valor}')
 print()
