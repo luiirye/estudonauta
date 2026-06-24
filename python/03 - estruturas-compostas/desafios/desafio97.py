@@ -8,3 +8,21 @@ Saída:
     Olá, Mundo!    
 -------------------      
 '''
+
+def escreva(texto):
+    mensagem = f'    {texto}    '
+    
+    for i in range(len(mensagem)):
+        print(f'-', end='')
+    print()
+    
+    print(mensagem)
+    
+    for i in range(len(mensagem)):
+        print(f'-', end='')
+    print()
+    
+escreva('Python')
+escreva('Django')
+escreva('Olá, Mundo!')
+escreva(f'EQFR insta omg courtesy combo')
