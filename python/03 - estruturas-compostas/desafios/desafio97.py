@@ -22,7 +22,9 @@ def escreva(texto):
         print(f'-', end='')
     print()
     
-escreva('Python')
-escreva('Django')
-escreva('Olá, Mundo!')
-escreva(f'EQFR insta omg courtesy combo')
+
+print(f'Mensagem adaptável:')
+print(f'-' * 20)
+mensagem = str(input(f'Digite uma mensagem qualquer: '))
+
+escreva(mensagem)

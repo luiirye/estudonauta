@@ -7,10 +7,11 @@ Mostre a área do terreno.
 def area(l, h):
     a = (l * h)
     print(f'---'* 25)
-    print(f'O Retângulo com largura de {l} e altura de {h} tem uma área igual à {a}')
+    print(f'O Retângulo com largura de {l} e altura de {h} tem uma área igual à {a}m²')
     print(f'---'* 25)
     
-area(2,3)
-area(4,5)
-area(10,30)
-area(1,2)
+print(f' Controle de Terrenos ')
+print(f'-' * 20)
+l = float(input(f'LARGURA (m): '))
+c = float(input(f'ALTURA (m): '))
+area(l,c)

@@ -8,45 +8,35 @@ A) de 1 até 10, de 1 em 1.
 B) de 10 até 0, de 2 em 2.
 C) Uma contagem personalizada.
 '''
+
 from time import sleep
 
 def contador(i, f, p):
-    # Trata o passo caso seja 0
+
+    if p < 0:
+        p *= -1
     if p == 0:
         p = 1
-    
-    # Exibe a mensagem de início da contagem
-    print('-=' * 20)
+
     print(f'Contagem de {i} até {f} de {p} em {p}:')
-    
-    # Trata o passo caso seja negativo (contagem regressiva)
-    if p < 0:
-        p = abs(p)
-        
-    # Realiza a contagem progressiva
+
     if i < f:
-        cont = i
+        cont = 1
         while cont <= f:
-            print(f'{cont} ', end='', flush=True)
-            sleep(0.3)
+            print(f'{cont} ', end = '', flush=True)
+            sleep(0.5)
             cont += p
-    
-    # Realiza a contagem regressiva
+        print(f'FIM!')
     else:
         cont = i
         while cont >= f:
-            print(f'{cont} ', end='', flush=True)
-            sleep(0.3)
+            print(f'{cont} ', end = '', flush=True)
+            sleep(0.5)
             cont -= p
-    print('FIM!')
+        print(f'FIM!')
 
-# a) Contagem de 1 até 10, de 1 em 1
 contador(1, 10, 1)
-
-# b) Contagem de 10 até 0, de 2 em 2
 contador(10, 0, 2)
-
-# c) Contagem personalizada
 print('-=' * 20)
 print('Agora é a sua vez de personalizar a contagem!')
 ini = int(input('Início: '))
