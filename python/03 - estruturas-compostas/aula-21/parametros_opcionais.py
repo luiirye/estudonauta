@@ -1,7 +1,9 @@
-def somar(a,b,c=0):
-
+def somar(a=0,b=0,c=0):
 	s = a + b + c
-	print(f'A soma vale {s}')
+	return s
 
-somar(3,2,5) # -> 3 + 2 + 5 = 10
-somar(8,4) # -> 8 + 4 + 0   = 12
+s1 = somar(3,2,5) # -> 3 + 2 + 5 = 10
+s2 = somar(8,4) # -> 8 + 4 + 0   = 12
+
+print(f'Resultado da primeira Soma: {s1}')
+print(f'Resultado da segunda Soma: {s2}')
