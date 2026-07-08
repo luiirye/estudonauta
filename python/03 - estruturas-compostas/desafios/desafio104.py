@@ -4,3 +4,5 @@ ela vai funcionar de forma semelhante à função input(), só que fazendo a val
 
 Ex: n = leiaInt('Digite um número')
 '''
+
+
