@@ -35,5 +35,8 @@ def fatorial(n, show=False):
     else:
         return f'{f}'
     
-print(f'{fatorial(5, show=False)}\n{fatorial(5, show=True)}')
+print(
+    f'{fatorial(5, show=False)}\n',
+    f'{fatorial(5, show=True)}'
+)
 
