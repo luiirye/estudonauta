@@ -5,7 +5,7 @@ Ficha() vai receber dois parâmetros opcionais: o nome de um jogador e quantos g
 O Programa deverá ser capaz de mostrar a ficha do jogador, mesmo que algum dado não tenha sido informado corretamente.
 '''
 def ficha(nome_jogador = 'Desconhecido', gols = 0):
-    return print(f'{nome_jogador} fez {gols} gols')
+    return print(f'O jogador {nome_jogador} fez {gols} gols')
 
 while True:
     
@@ -13,7 +13,7 @@ while True:
     gols = str(input(f'Gols: '))
     
     if nome == '':
-        nome = 'Desconhecido'
+        nome = '<Desconhecido>'
     if gols == '':
         gols = 0
     else:

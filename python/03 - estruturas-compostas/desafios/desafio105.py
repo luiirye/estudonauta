@@ -26,26 +26,34 @@ def notas(*n, sit=False):
     turma['Notas'] = n
     
     tamanho = len(turma['Notas'])
-    maior_nota = max(turma['Notas'])
-    menor_nota = min(turma['Notas'])
-    media_turma = (sum(turma['Notas']) / tamanho) 
-        
-    print(f'Dicionário Completo: {turma}')
-    print(f'Quantidade de notas: {tamanho}')
-    print(f'Maior Nota: {maior_nota}')
-    print(f'Menor Nota: {menor_nota}')
-    print(f'Média da Turma: {media_turma}')
+    turma['maior_nota'] = max(turma['Notas'])
+    turma['menor_nota'] = min(turma['Notas'])
+    turma['media_turma'] = (sum(turma['Notas']) / tamanho) 
     
+    if turma['media_turma'] > 7:
+        turma['situação'] = 'BOM'
+    else:
+        turma['situação'] = 'RUIM'
+            
     if sit == True:
-        if media_turma > 7:
-            return print(f'Turma Aprovada!!')
-        else:
-            return print(f'Turma Reprovada!')
-
+        print(f'Dicionário Completo: {turma}')
+        print(f'Quantidade de notas: {tamanho}')
+        print(f'Maior Nota: {turma['maior_nota']}')
+        print(f'Menor Nota: {turma['menor_nota']}')
+        print(f'Média da Turma: {turma['media_turma']}')
+    else:
+        del turma['situação']
+        print(f'Dicionário completo: {turma}')
+        print(f'Quantidade de notas: {tamanho}')
+        print(f'Maior Nota: {turma['maior_nota']}')
+        print(f'Menor Nota: {turma['menor_nota']}')
+        print(f'Média da Turma: {turma['media_turma']}')
+    
 # Programa principal
-
 notas(5,4,3,1,2,10,10,10, sit=False)
 linha()
 notas(5,4,3,1,2,10,10,10, sit=True)
 linha()
 notas(9,9,9,4,7, sit=True)
+linha()
+help(notas)
