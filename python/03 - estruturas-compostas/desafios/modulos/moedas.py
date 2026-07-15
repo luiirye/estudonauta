@@ -1,14 +1,19 @@
 def aumentar(n, a):
-    '''
-    A função aumentar multiplica o valor fornecido pela porcentagem fornecida
-    '''
-    return (n * (a/100))
+    aumenta = (n + (n * (a/100)))
+    return aumenta
 
-def diminuir():
-    ...
+def diminuir(n, a):
+    diminui = (n - (n * (a/100)))
+    return diminui
 
-def dobro():    
-    ...
+def dobro(n):    
+    dobra = n * 2
+    return dobra
 
-def metade():
-    ...
+def metade(n):
+    metade = n / 2
+    return metade 
+
+def moeda(n):
+    return f'R$ {n:.2f}'.replace('.' , ',') # troca o ponto por vírgula
+    
