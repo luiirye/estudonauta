@@ -7,7 +7,7 @@ Crie um módulo chamado moeda.py que tenha as funções incorporadas:
 
 faça também um programa que importe esse módulo e use algumas dessas funções.
 '''
-from modulos import moedas
+from utilidadesCeV.moedas import moedas
 
 p = float(input(f'Digite o preço: R$ '))
 print(f'A metade de {p} é {moedas.metade(p)}')

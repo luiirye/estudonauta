@@ -11,3 +11,11 @@
 # Passo 2: módulo moeda.py
 # ==========================
 '''
+
+from utilidadesCeV.moedas.moedas import resumo
+
+valor = float(input(f'Digite o preço: R$ '))
+taxa_aumento = float(input(f'Digite a porcentagem de aumento para R$ {valor:.2f}: '))
+taxa_reduz = float(input(f'Digite a porcentagem de aumento para R$ {valor:.2f}: '))
+
+resumo(valor, taxa_aumento, taxa_reduz)

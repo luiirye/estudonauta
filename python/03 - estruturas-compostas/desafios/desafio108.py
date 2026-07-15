@@ -3,7 +3,7 @@ Adapte o código do desafio #107, criando uma função adicional chamada moeda()
 que consiga mostrar os números como um valor monetário formatado.
 '''
 
-from modulos import moedas
+from utilidadesCeV.moedas import moedas
 
 p = float(input(f'Digite o preço: R$ '))
 print(f'A metade de {moedas.moeda(p)} é {moedas.moeda(moedas.metade(p))}')
