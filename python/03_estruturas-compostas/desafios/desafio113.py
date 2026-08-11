@@ -5,29 +5,31 @@ Aproveite e crie também uma função leiaFloat() com a mesma funcionalidade.
 '''
 
 def leiaInt(msg):
-    valor = 0
     while True:
-        num = str(input(msg))
-        if num.isnumeric():
-            valor = int(num)
-            break
+        try:
+            n = int(input(msg))
+        except(ValueError, TypeError):
+            print('\033[31mERRO: Por favor, digite um número inteiro válido.\033[m')
+            continue
+        except(KeyboardInterrupt):
+            print(f'\033[31mEntrada de dados interrompida pelo usuário.\033[m')
+            return 0
         else:
-            print('\033[31mERRO! Digite um número inteiro válido.\033[m')
-    return valor
-
+            return n
 
 def leiaFloat(msg):
-    valor = 0
     while True:
-        num = str(input(msg))
-        if num:
-            valor = float(num)
-            break
+        try:
+            n = float(input(msg))
+        except(ValueError, TypeError):
+            print('\033[31mERRO: Por favor, digite um número inteiro válido.\033[m')
+            continue
+        except(KeyboardInterrupt):
+            print(f'\033[31mEntrada de dados interrompida pelo usuário.\033[m')
+            return 0
         else:
-            print('\033[31mERRO! Digite um número inteiro válido.\033[m')
-    return valor
+            return n
 
-# Programa Principal
-n1 = leiaInt(f'Digite um número inteiro: ')
-n2 = leiaFloat(f'Digite um número real: ')
-print(f'Você digitou o número inteiro {n1}\nE o número real: {n2}')
+n1 = leiaInt('Digite um valor inteiro: ')
+n2 = leiaFloat(f'Digite um valor Real: ')
+print(f'O valor inteiro foi {n1} e o número real foi {n2}')
