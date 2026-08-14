@@ -4,6 +4,6 @@ import pygame
 import time
 
 pygame.init() #Iniciando o pygame
-pygame.mixer.music.load('desafio21.mp3')
+pygame.mixer.music.load('exercicio_021.mp3')
 pygame.mixes.music.play()
 pygame.event.wait()

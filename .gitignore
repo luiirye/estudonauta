@@ -1,9 +1,23 @@
-# Ignorar pastas de cache do Python
+# Cache e arquivos compilados do Python
 __pycache__/
+*.py[cod]
 
-# Ignorar arquivos compilados do Python
-*.pyc
-*.pyo
-*.pyd
+# Ambientes virtuais e ferramentas Python
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Variáveis de ambiente e segredos locais
+.env
+.env.*
+!.env.example
+
+# Sistemas operacionais e editores
+.DS_Store
+Thumbs.db
 .idea/
 .vscode/

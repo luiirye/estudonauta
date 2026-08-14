@@ -1,99 +1,76 @@
-# Curso de Python - Estudonauta
+# Formação Python — Estudonauta
 
-Repositório contendo meus estudos, exercícios e desafios realizados durante o curso de **Python** do **Estudonauta**.
+Repositório de minha autoria dedicado aos estudos de Python no **Estudonauta**, com aulas práticas, anotações e soluções desenvolvidas durante a formação ministrada pelo professor Gustavo Guanabara.
 
-O objetivo deste repositório é acompanhar minha evolução na linguagem, praticar os conceitos apresentados nas aulas e servir como material de consulta no futuro.
+Mais do que reunir respostas, este repositório registra minha evolução: dos primeiros comandos e estruturas de controle à modularização, ao tratamento de erros e à orientação a objetos.
 
----
+## Progresso
 
-## Estrutura do Repositório
+| Mundo | Conteúdo principal | Situação |
+| --- | --- | :---: |
+| 01 | Fundamentos da linguagem | Concluído |
+| 02 | Estruturas de controle | Concluído |
+| 03 | Estruturas compostas | Concluído |
+| 04 | Orientação a objetos | Em andamento |
 
-```
+## Navegação
+
+```text
 python/
-│
-├── 01 - fundamentos/
-│   ├── aula-04/
-│   ├── aula-06/
-│   ├── aula-07/
-│   ├── aula-08/
-│   ├── aula-09/
-│   ├── aula-10/
-│   ├── aula-11/
-│   └── desafios/
-│
-├── 02 - estruturas-de-controle/
-│   ├── aula-12/
-│   ├── aula-13/
-│   ├── aula-14/
-│   ├── aula-15/
-│   └── desafios/
-│
-├── 03 - estruturas-compostas/
-│   ├── aula-16/
-│   ├── aula-17/
-│   ├── aula-18/
-│   ├── aula-19/
-│   ├── aula-20/
-│   ├── aula-21/
-│   └── desafios/
-│
-├── .gitignore
-└── README.md
+├── mundo_01_fundamentos/
+│   ├── aulas/
+│   └── exercicios/
+├── mundo_02_estruturas_de_controle/
+│   ├── aulas/
+│   └── exercicios/
+├── mundo_03_estruturas_compostas/
+│   ├── aulas/
+│   └── exercicios/
+└── mundo_04_orientacao_a_objetos/
+    ├── aulas/
+    └── exercicios/
 ```
 
----
+- Consulte o [índice completo de exercícios](docs/INDICE_EXERCICIOS.md) para localizar uma solução pelo número, título ou assunto.
+- Consulte o [guia de organização](docs/GUIA_DE_ORGANIZACAO.md) antes de adicionar aulas, desafios, versões alternativas ou projetos.
+- Cada mundo possui um README próprio com seu escopo e particularidades.
 
-## Conteúdo
+## Como executar
 
-### 01 - Fundamentos
-- Variáveis
-- Tipos de dados
-- Entrada e saída
-- Operadores
-- Primeiros programas
-- Desafios
+É necessário ter o Python 3 instalado. Arquivos independentes podem ser executados a partir da raiz do repositório:
 
-### 02 - Estruturas de Controle
-- Condicionais (`if`, `elif`, `else`)
-- Estruturas de repetição (`for` e `while`)
-- Boas práticas
-- Desafios
+```bash
+python3 python/mundo_01_fundamentos/exercicios/exercicio_001.py
+```
 
-### 03 - Estruturas Compostas
-- Listas
-- Tuplas
-- Dicionários
-- Manipulação de coleções
-- Desafios
+Exercícios divididos em módulos ou que utilizam arquivos de apoio devem ser executados a partir da própria pasta:
 
----
+```bash
+cd python/mundo_03_estruturas_compostas/exercicios/exercicio_115
+python3 sistema.py
+```
 
-## Objetivos
+Para verificar a sintaxe e a organização do repositório sem executar os programas interativos:
 
-- Aprender Python do zero.
-- Desenvolver lógica de programação.
-- Criar uma base sólida para projetos futuros.
-- Registrar minha evolução durante o curso.
+```bash
+python3 scripts/validar_repositorio.py
+```
 
----
+## Princípios deste repositório
+
+- As soluções representam o meu raciocínio no momento em que cada exercício foi realizado.
+- Versões antigas não são apagadas: quando relevantes, permanecem identificadas como alternativas.
+- Melhorias de organização não devem descaracterizar meu estilo nem reescrever retroativamente meu processo de aprendizagem.
+- Novos arquivos seguem a convenção descrita no guia para manter o projeto sustentável durante os próximos mundos.
 
 ## Tecnologias
 
 - Python 3
+- Git e GitHub
 - Visual Studio Code
-- Git
-- GitHub
 
----
+## Autoria
 
-## Observações
+Desenvolvido por **Luis Felipe da Costa Borges**, estudante de Engenharia de Computação e entusiasta de desenvolvimento de software.
 
-Este repositório é destinado exclusivamente para fins de estudo. Conforme avanço no curso, novas aulas, exercícios e desafios serão adicionados.
-
----
-
-## Autor
-
-**Luis Felipe da Costa Borges**
-
-Estudante de Engenharia de Computação e entusiasta de desenvolvimento de software.
+Este é um repositório educacional independente. Estudonauta, Curso em Vídeo e seus respectivos nomes pertencem aos seus titulares.
