@@ -14,8 +14,13 @@ class Gafanhoto:
 
 
 # Declaração de objetos
-g1 = Gafanhoto()
-g1.nome = "Luis"
-g1.idade = 22
-g1.aniversario()
-print(g1.mensagem())
+g1 = Gafanhoto() # Instanciação
+g1.nome = "Luis" # Atributo
+g1.idade = 22 # Atributo
+g1.aniversario() # Método
+print(g1.mensagem()) # Método
+
+g2 = Gafanhoto()
+g2.nome = "Gabryell"
+g2.idade = 24
+print(g2.mensagem())
