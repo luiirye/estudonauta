@@ -20,11 +20,20 @@ class Gafanhoto:
 
     def __str__(self):
         return "Vou te mostrar uma coisa..."
+    
+    def __getstate__(self):
+        return f'Estado: nome = {self.nome}, idade = {self.idade}'
+    
+    def __class__(self):
+        return f'Nome da Classe: Gafanhoto'
 
 # Declaração de objetos
 g1 = Gafanhoto("Maria", 17) # Instanciação
 g1.aniversario() # Método
-print(g1.mensagem()) # Método
+print(g1.__dict__) # Atributo
+print(g1.__getstate__()) # Método
+print(g1.__class__())
+print(g1.__doc__)
 
 # print(g1.__doc__)
-print(g1)
+# print(g1)
