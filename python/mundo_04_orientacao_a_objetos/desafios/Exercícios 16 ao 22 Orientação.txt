@@ -1,0 +1,12 @@
+Exercícios 16 ao 22 - Orientação à objetos.
+
+16 - Crie uma classe FUNCIONÁRIO, onde podemos cadastrar nome, setor e cargo. Crie também um método que permita ao funcionário se apresentar.
+
+(Obs: método apresentação deve retornar f'Olá, eu sou Nome, sou cargo do setor nome_setor.)
+
+17 - Crie a classe Produto, onde a gente pode cadastrar NOME e o PREÇO. Crie também um método que mostre a ETIQUETA de preço do produto
+(Obs: o método etiqueta deve retornar uma tabela informando o nome do produto e o Preço desse produto)
+
+18 - Crie uma classe chamada Churrasco, onde seja possível informar quantas pessoas vão participar e mostre quanto de carne deve ser comprado, o custo total do churrasco e o preço por pessoa. CONSIDERE: Consumo padrão 400g de carne por pessoa. Preço: 82,40/kg
+
+19 - Crie uma classe chamada Livro, que vai simular a passagem de páginas de um livro, considerando também se o usuário chegou ao fim da leitura.
