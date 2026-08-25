@@ -7,6 +7,7 @@ Status: Feito
 
 17 - Crie a classe Produto, onde a gente pode cadastrar NOME e o PREÇO. Crie também um método que mostre a ETIQUETA de preço do produto
 (Obs: o método etiqueta deve retornar uma tabela informando o nome do produto e o Preço desse produto)
+Status: Feito
 
 18 - Crie uma classe chamada Churrasco, onde seja possível informar quantas pessoas vão participar e mostre quanto de carne deve ser comprado, o custo total do churrasco e o preço por pessoa. CONSIDERE: Consumo padrão 400g de carne por pessoa. Preço: 82,40/kg
 
