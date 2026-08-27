@@ -21,19 +21,18 @@ class Livro:
     def avancarPaginas(self, quantidade):
         self.avancar = quantidade
          
-        for i in range(self.avancar):
-            self.pagina_atual += 1
-            print(f'Pág{self.pagina_atual} :arrow_forward: ', end="")
-            sleep(1)
-            
-        if self.avancar > self.pagina_atual:
-            return print(f':error: Não é possível avançar a quantidade desejada') 
+        if self.pagina_atual + quantidade > self.paginas:
+            return print(f':x: [red]Não é possível avançar a quantidade desejada[/red]') 
         else:
-            return print(f'[bold blue]Você avançou {self.avancar} páginas e agora está na [yellow]página  {self.pagina_atual}[/yellow][/bold blue]')
+            for i in range(self.avancar):
+                self.pagina_atual += 1
+                print(f'Pág{self.pagina_atual} :arrow_forward: ', end="")
+                sleep(1)
+            
+            print(f'[bold blue]Você avançou {self.avancar} páginas e agora está na [yellow]página  {self.pagina_atual}[/yellow][/bold blue]')
 # Objetos
 teste = Livro()
 teste.informarLivroPaginas()
 teste.exibirLivro()
 teste.avancarPaginas(10)
-teste.avancarPaginas(5)
-teste.avancarPaginas(10)
+teste.avancarPaginas(11)

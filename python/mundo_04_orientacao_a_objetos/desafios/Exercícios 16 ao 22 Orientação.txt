@@ -10,7 +10,7 @@ Status: Feito
 Status: Feito
 
 18 - Crie uma classe chamada Churrasco, onde seja possível informar quantas pessoas vão participar e mostre quanto de carne deve ser comprado, o custo total do churrasco e o preço por pessoa. CONSIDERE: Consumo padrão 400g de carne por pessoa. Preço: 82,40/kg
-Status: 
+Status: Feito
 
 
 19 - Crie uma classe chamada Livro, que vai simular a passagem de páginas de um livro, considerando também se o usuário chegou ao fim da leitura.
