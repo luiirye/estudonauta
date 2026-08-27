@@ -14,11 +14,14 @@ Status: Feito
 
 
 19 - Crie uma classe chamada Livro, que vai simular a passagem de páginas de um livro, considerando também se o usuário chegou ao fim da leitura.
-Status: feito
+Status: Feito
 
 20 - Crie uma classe chamada Gamer, onde podemos cadastrar nome, nick e os jogos favoritos de uma pessoa. Crie também um método que permita mostrar a ficha desse gamer.
+Status: Feito
 
 21 - Crie uma Classe caneta, que simule o funcionamento de uma caneta colorida, podendo escrever frases na cor relativa.	
+Status: Andamento
 
 22 - Crie uma classe ControleRemoto, onde vamos simular o funcionamento de um controle simples (Canal, volume, liga/desliga)
 OBS: @ - Liga/Desliga <> - Avança Canal +- Volume 0 - Sai do programa.
+Status: Não iniciado

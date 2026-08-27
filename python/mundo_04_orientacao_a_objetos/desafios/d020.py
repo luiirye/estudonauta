@@ -44,18 +44,24 @@ class Gamer:
         return Panel(ficha, title="Ficha de jogador", width=50 ,style="magenta")
     
 # Objetos da claasse
+
+# Player 1
 player = Gamer()
 player.registrar_jogador()
 
+# Player 2
 player2 = Gamer()
 player2.registrar_jogador()
 
+# Player 3
 player3 = Gamer()
 player3.registrar_jogador()
 
+# Player 4
 player4 = Gamer()
 player4.registrar_jogador()
 
+# Fichas para cada jogador
 print(player.ficha())
 print(player2.ficha())
 print(player3.ficha())
