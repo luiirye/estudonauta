@@ -14,6 +14,7 @@ Status: Feito
 
 
 19 - Crie uma classe chamada Livro, que vai simular a passagem de páginas de um livro, considerando também se o usuário chegou ao fim da leitura.
+Status: feito
 
 20 - Crie uma classe chamada Gamer, onde podemos cadastrar nome, nick e os jogos favoritos de uma pessoa. Crie também um método que permita mostrar a ficha desse gamer.
 
