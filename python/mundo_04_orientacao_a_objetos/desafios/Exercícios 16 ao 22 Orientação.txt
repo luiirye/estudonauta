@@ -20,7 +20,7 @@ Status: Feito
 Status: Feito
 
 21 - Crie uma Classe caneta, que simule o funcionamento de uma caneta colorida, podendo escrever frases na cor relativa.	
-Status: Andamento
+Status: Andamento 
 
 22 - Crie uma classe ControleRemoto, onde vamos simular o funcionamento de um controle simples (Canal, volume, liga/desliga)
 OBS: @ - Liga/Desliga <> - Avança Canal +- Volume 0 - Sai do programa.
