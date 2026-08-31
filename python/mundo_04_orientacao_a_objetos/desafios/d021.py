@@ -1,4 +1,5 @@
 from rich import print
+from time import sleep
 
 class Caneta:
     def __init__(self):
@@ -9,7 +10,8 @@ class Caneta:
         self.largar_caneta = False
         self.tampa = True
         self.destampa = False
-        self.cor = ["Preto", "Azul", "Vermelho", "Verde", "Roxo"]
+        self.cor = ["bold black", "bold blue", "bold red", "bold green", "bold purple"]
+        self.cor_escolhida = None
         self.tinta = 100
         self.escrever = False
      
@@ -66,32 +68,49 @@ class Caneta:
             
             if opt == 1:
                 print(f'[bold black] VOCÊ ESCOLHEU A COR PRETA!! [/bold black]')
+                self.cor_escolhida = self.cor[0]
+                return self.cor[0]
                 break
             elif opt == 2:
                 print(f'[bold blue] VOCÊ ESCOLHEU A COR AZUL!! [/bold blue]')
+                self.cor_escolhida = self.cor[1]
+                return self.cor[1]
                 break
             elif opt == 3:
                 print(f'[bold red] VOCÊ ESCOLHEU A COR VERMELHA!! [/bold red]')
+                self.cor_escolhida = self.cor[2]
+                return self.cor[2]
                 break
             elif opt == 4:
                 print(f'[bold green] VOCÊ ESCOLHEU A COR VERDE!! [/bold green]')
+                self.cor_escolhida = self.cor[3]
+                return self.cor[3]
                 break
             elif opt == 5:
                 print(f'[bold purple] VOCÊ ESCOLHEU A COR ROXA!! [/bold purple]')
+                self.cor_escolhida = self.cor[4]
+                return self.cor[4]
                 break
             elif opt == 0:
                 print(f'Saindo...')
                 break
-                            
+    
+    def escrever_texto(self):
+        if self.caneta_na_mao: 
+            if  self.destampa:
+                mensagem = str(input(f'Digite o seu texto: '))
+                print(f'[{self.cor_escolhida}]{mensagem}[/{self.cor_escolhida}]')        
+            else:
+                print(f'[red]TEM QUE DESTAMPAR A CANETA[/red]')
+        else:
+            print(f'[red]TEM QUE PEGAR A CANETA PRIMEIRO[/red]')
+
 # Objetos da Classe Caneta para teste
 escritor = Caneta()
 escritor.pegar_caneta()
-escritor.pegar_caneta()
-
-escritor.soltar_caneta()
-escritor.soltar_caneta()
-
-escritor.tampar_caneta()
-escritor.tampar_caneta()
-
+sleep(1)
+escritor.destampar_caneta()
+sleep(1)
 escritor.escolher_cor_caneta()
+sleep(1)
+escritor.escrever_texto()
