@@ -18,7 +18,4 @@ class Produto:
 p1 = Produto("teclado", 120)
 print(p1.etiqueta_produto())
 p2 = Produto("PC Gamer",10_000)
-print(p2.etiqueta_produto())
-    
-
-        
+print(p2.etiqueta_produto())    
