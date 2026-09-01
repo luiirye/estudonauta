@@ -61,7 +61,7 @@ player3.registrar_jogador()
 player4 = Gamer()
 player4.registrar_jogador()
 
-# Fichas para cada jogador
+# Fichas para cada jogadors
 print(player.ficha())
 print(player2.ficha())
 print(player3.ficha())
