@@ -28,7 +28,7 @@ class Gamer:
         ordem_jogos = ""
         
         for i , jogo in enumerate(self.jogos_favoritos, start= 1):
-            ordem_jogos += f'{i}° {jogo}\n'
+            ordem_jogos += f':video_game: {jogo}\n'
         
         ficha = Panel(
             f'[bold green]Nome do [bright_cyan]jogador[/bright_cyan]: '
@@ -49,20 +49,5 @@ class Gamer:
 player = Gamer()
 player.registrar_jogador()
 
-# Player 2
-player2 = Gamer()
-player2.registrar_jogador()
-
-# Player 3
-player3 = Gamer()
-player3.registrar_jogador()
-
-# Player 4
-player4 = Gamer()
-player4.registrar_jogador()
-
 # Fichas para cada jogadors
 print(player.ficha())
-print(player2.ficha())
-print(player3.ficha())
-print(player4.ficha())
